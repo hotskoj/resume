@@ -2,8 +2,8 @@ import React, {useState, useEffect} from "react";
 import axios from 'axios';
 
 export default function Quote() {
-    const url_quote = import.meta.env.VITE_API_QUOTE_URL;
-    const api_key = import.meta.env.VITE_API_QUOTE_KEY;
+    const url_quote = process.env.API_QUOTE_URL;
+    const api_key = process.env.API_QUOTE_KEY;
 
     const [quote, setQuote] = useState({quote: "", author: "", category: ""});
 

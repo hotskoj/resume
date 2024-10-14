@@ -4,8 +4,8 @@ import data from '../words.json'
 
 
 export default function Word(){
-    const url = import.meta.env.VITE_API_MW_URL;
-    const api_key = import.meta.env.VITE_API_MW_KEY;
+    const url = process.env.API_MW_URL;
+    const api_key = process.env.API_MW_KEY;
 
     const date = new Date();
     const day = date.getDay();
