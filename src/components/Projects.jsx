@@ -6,9 +6,9 @@ export default function Projects(){
     <div className="container projects">
         <h3>Projects</h3>
         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-            <Project source="./images/vsta.png" url="https://github.com/hotskoj/vsta" content="A simple todo app. Users are able to add, edit, delete, and group by priority their todos."/>
-            <Project source="./images/top-spots.png" url="https://github.com/hotskoj/react-san-diego-top-spots" content="San Diego Top Spots. The website pulls from an API to list the 30 top spots in San Diego with directions."/>
-            <Project source="./images/change-calculator.png" url="https://github.com/hotskoj/react-change-calculator" content="Change Calculator. Calculates change by denomination based on amount owed and amount received."/>
+            <Project source="./images/vsta.png" url="https://vstda-2909a6c5790a.herokuapp.com/" git="https://github.com/hotskoj/vsta" content="A simple to-do app allows users to easily create, edit, delete, and manage their tasks in an intuitive interface."/>
+            <Project source="./images/top-spots.png" url="https://san-diego-top-spots-e3ee28eebcd7.herokuapp.com/" git="https://github.com/hotskoj/react-san-diego-top-spots" content="An app that displays the top 30 spots in San Diego, complete with descriptions and directions."/>
+            <Project source="./images/change-calculator.png" url="https://change-calculator-8eb2892947c3.herokuapp.com/" git="https://github.com/hotskoj/react-change-calculator" content="An app that calculates change to be tendered in specific bill and coin denominations based on the total cost and payment received."/>
         </div>
     </div>
   )

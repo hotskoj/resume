@@ -8,6 +8,7 @@ import Skills from "./Skills";
 import Quote from "./Quote";
 import Hobbies from "./Hobbies";
 import Line from "./Line";
+import Footer from "./Footer";
 
 export default function App(){
   return (
@@ -22,6 +23,7 @@ export default function App(){
         <Quote/>
         <Line/>
         <Hobbies/>
+        <Footer/>
     </div>
   )
 }
