@@ -9,7 +9,7 @@ export default function Project(props){
                 <p className="card-text">{props.content}</p>
                 <div className="d-flex justify-content-between align-items-center">
                     <div className="btn-group">
-                        <a target="_blank" class="btn btn-sm btn-outline-secondary" href={props.url} role="button">View</a>
+                        <a target="_blank" className="btn btn-sm btn-outline-secondary" href={props.url} role="button">View</a>
                     </div>
                     <a target="_blank" href={props.git}>GitHub</a>
                 </div>
