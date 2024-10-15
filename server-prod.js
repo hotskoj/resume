@@ -4,6 +4,7 @@ import { fileURLToPath } from 'url';
 import express from 'express';
  
 const app = express();
+var port = process.env.PORT || 8080;
  
 app.use(express.static(path.resolve(path.dirname(fileURLToPath(import.meta.url)), 'dist/client'), { index: false }));
  
@@ -24,6 +25,6 @@ app.use('*', async (_, res) => {
   }
 });
  
-app.listen(5173, () => {
-  console.log('http://localhost:5173.');
+app.listen(port, () => {
+  console.log(`Server listening on ${port}`);
 });
