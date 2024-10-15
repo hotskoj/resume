@@ -11,8 +11,6 @@ import Line from "./Line";
 import Footer from "./Footer";
 
 export default function App({data}){
-  let wordData = data[0];
-  let quoteData = data[1];
 
 {/* <div>
   <Header/>

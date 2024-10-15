@@ -36,7 +36,7 @@ export const getServerData = async() => {
         const data = [data1[0], data2[0]];
         return data;
     } catch (error) {
-        console.error(error);
+        console.log(error);
         return {};
     }
 }

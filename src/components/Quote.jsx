@@ -1,5 +1,4 @@
-import React, {useState, useEffect} from "react";
-import axios from 'axios';
+import React from "react";
 
 export default function Quote({data}) {
     const quote = JSON.parse(JSON.stringify(data[1].quote));
