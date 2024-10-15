@@ -1,40 +1,12 @@
 import React, { useEffect, useState} from 'react';
-import axios from 'axios';
-import data from '../words.json'
 
+export default function Word({data}) {
+    let word = JSON.parse(JSON.stringify(data[0].meta.id));
+    let type = JSON.parse(JSON.stringify(data[0].fl));
+    let def = JSON.parse(JSON.stringify(data[0].shortdef));
 
-export default function Word(){
-    const url = process.env.API_MW_URL;
-    const api_key = process.env.API_MW_KEY;
-
-    const date = new Date();
-    const day = date.getDay();
-    const words = data.words;
-    const word = words[day];
-    const [def, setDef] = useState("");
-    const [type, setType] = useState("");
-
-
-    const options = {
-        method: 'GET',
-        url: `${url}/${word}`,
-        params: {key: api_key},
-    };
-
-    useEffect(() => {
-        fetchData();
-    }, []);
-
-    const fetchData = async () => {
-        try {
-            const response = await axios.request(options);
-            setType(response.data[0].fl);
-            setDef(response.data[0].shortdef);
-        } catch (error) {
-            console.error(error);
-        }
-    };
-
+    word = word.match(/([A-Za-z]+)/)[0];
+    
     return (
         <div className="row wordOfDay">
             <div className="d-flex flex-column justify-content-center">

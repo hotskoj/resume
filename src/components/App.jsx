@@ -10,20 +10,37 @@ import Hobbies from "./Hobbies";
 import Line from "./Line";
 import Footer from "./Footer";
 
-export default function App(){
+export default function App({data}){
+  let wordData = data[0];
+  let quoteData = data[1];
+
+{/* <div>
+  <Header/>
+  <Intro/>
+  <Word data={data}/>
+  <Projects/>
+  <Line/>
+  <Skills/>
+  <Education/>
+  <Quote data={data}/>
+  <Line/>
+  <Hobbies/>
+  <Footer/>
+</div> */}
+
   return (
     <div>
-        <Header/>
-        <Intro/>
-        <Word/>
-        <Projects/>
-        <Line/>
-        <Skills/>
-        <Education/>
-        <Quote/>
-        <Line/>
-        <Hobbies/>
-        <Footer/>
+      <Header/>
+      <Intro/>
+      <Word data={data}/>
+      <Projects/>
+      <Line/>
+      <Skills/>
+      <Education/>
+      <Quote data={data}/>
+      <Line/>
+      <Hobbies/>
+      <Footer/>
     </div>
   )
 }
