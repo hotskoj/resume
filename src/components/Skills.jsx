@@ -9,13 +9,13 @@ export default function Skills() {
                     <p>- Javascript (ES6)</p>
                     <p>- React.js</p>
                     <p>- Node.js</p>
-                    <p>- PostgreSQL</p>
+                    <p>- PostgreSQL/MySQL</p>
                 </div>
                 <div className="col-sm-3">
                     <p>- HTML5</p>
                     <p>- CSS3</p>
                     <p>- Python</p>
-                    <p>- ServiceNow</p>
+                    <p>- MongoDB</p>
                 </div>
             </div>
         </div>

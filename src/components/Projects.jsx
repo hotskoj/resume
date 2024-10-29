@@ -9,6 +9,8 @@ export default function Projects(){
             <Project source="./images/vsta.jpeg" url="https://vstda-2909a6c5790a.herokuapp.com/" git="https://github.com/hotskoj/vsta" content="A simple to-do app allows users to easily create, edit, delete, and manage their tasks in an intuitive interface."/>
             <Project source="./images/top-spots.png" url="https://san-diego-top-spots-e3ee28eebcd7.herokuapp.com/" git="https://github.com/hotskoj/react-san-diego-top-spots" content="An app that displays the top 30 spots in San Diego, complete with descriptions and directions."/>
             <Project source="./images/change-calculator.png" url="https://change-calculator-8eb2892947c3.herokuapp.com/" git="https://github.com/hotskoj/vite-change-calculator" content="An app that calculates change to be tendered in specific bill and coin denominations based on the total cost and payment received."/>
+            <Project source="./images/habit-tracker.png" url="" git="https://github.com/hotskoj/ejs-habit-tracker" content="An app that helps you build and maintain positive habits through daily, weekly, and monthly progress visualization."/>
+            <Project source="./images/blank.png" url="" git="https://github.com/hotskoj/mongoose-blog-api" content="A backend-only app utilizing Mongoose and MongoDB to create a robust API for managing blog posts and users."/>
         </div>
     </div>
   )
